@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-image: url('/images/login_background_base.png');
+    background-size: cover; /* Make the background image cover the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+
+.divider {
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.center-text {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Optional: Add some space above the text */
+}
+
+.container {
+    display: flex;
+    width: 80%; /* Adjust width to fit both image and form */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: auto; /* Center the container */
+    align-items: center; /* Align items vertically */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 80%; /* Adjust width as needed */
+    height: auto;
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff92;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.758);
+    width: 100%;
+    max-width: 350px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.password-group {
+    position: relative;
+    width: 100%;
+}
+
+.password-group input[type="password"] {
+    width: 100%;
+    padding: 15px 40px 10px 10px; /* Add padding to make space for the icon */
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.password-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF;
+    transform: scale(1.02);
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #005ec2;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #00356e;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #005ec2;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation-container {
+    text-align: center; /* Center text and inline elements */
+}
+

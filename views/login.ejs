@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIMS Login</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>  
+
+    <div class="image-container">
+            <img src="/images/company_logo-removebg-preview.png" alt="Company Logo">
+    </div>
+
+    <div class="form-container">
+        <form action="../login" method="post">
+            <h2>Online Stock Inventory Management System</h2>
+            <div class="form-group">
+                <input type="text" name="username" id="name" placeholder="Enter your name" required>
+            </div>
+            <div id="toggle">
+                
+            </div>
+            <div class="form-group password-group">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <i class="fa-regular fa-eye" id="togglePassword"></i>
+            </div>
+            <div class="divider"></div>
+            <button type="submit" class="submit-btn">LOGIN</button>
+            <p class="center-text">Don't have an account?<a href="/signup">Signup</a></p>
+        </form>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
