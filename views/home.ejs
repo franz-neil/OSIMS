@@ -27,11 +27,16 @@
                     <span class="material-symbols-outlined">menu</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href=""> 
+                <a href="#" id="branchesLink">
                     <span class="material-symbols-outlined">store</span>
                     <h3>Branches</h3>
                 </a>
-                <a href="">
+                <div id="branchesDropdown" class="branches_hidden">
+                    <a href="#">Branch 1</a>
+                    <a href="#">Branch 2</a>
+                    <a href="#">Branch 3</a>
+                </div>
+                <a href="#">
                     <span class="material-symbols-outlined">person</span>
                     <h3>Users</h3>
                 </a>
@@ -39,27 +44,28 @@
                     <span class="material-symbols-outlined">history</span>
                     <h3>History</h3>
                 </a>
-                <a href="#" id="logoutLink">
-                    <span class="material-symbols-outlined">logout</span>
-                    <h3>Logout</h3>
-                </a>
                 
             </div>
          </aside>
         <!--left side end--> 
 
+
         <!--main section start-->
          <main>
-            <h1>Dashboard</h1>
-
-                <div class="date">
-                    <input type="date">
+            <div class="right">
+                <span class="material-symbols-outlined" id="dropdownToggle">account_circle</span>
+                <a>Admin</a>
+                <div id="dropdownMenu" class="hide">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#" id="logoutLink">Logout</a>
                 </div>
+             </div>
 
                 <div class="insights">
                     <!-- Start selling -->
                         <div class="sales">
-                            <span class="material-symbols-outlined">trending_up</span>
+                            <span class="material-symbols-outlined">category</span>
                                 <div class="middle">
                                     <div class="left">
                                         <h3>Sales</h3>
@@ -70,10 +76,8 @@
                                     <svg>
                                         <circle r="30" cy="40" cx="40"></circle>
                                     </svg>
-                                    <div class="number">80%</div>
-                                </div>
+                                </div>       
                         </div>
-                        <small>Last 24 hours</small>
                     <!-- End selling -->
                     <!-- Start Expenses -->
                         <div class="expenses">
@@ -88,10 +92,8 @@
                                     <svg>
                                         <circle r="30" cy="40" cx="40"></circle>
                                     </svg>
-                                    <div class="number">80%</div>
                                 </div>
                         </div>
-                        <small>Last 24 hours</small>
                             <!-- End Expenses -->     
                                 <!-- Start Income -->
                                 <div class="income">
@@ -106,21 +108,14 @@
                                             <svg>
                                                 <circle r="30" cy="40" cx="40"></circle>
                                             </svg>
-                                            <div class="number">80%</div>
                                         </div>
                                 </div>
-                                <small>Last 24 hours</small>
-                            <!-- End Expenses -->                   
-
+                            <!-- End Expenses -->                  
                 </div>
          </main>
         <!--main start end-->
 
-        <!--right side start-->
-        <div class="right">
-            <h1>right</h1>
-         </div>
-        <!--right side end-->
+
     </div>
 
     <script src="/script1.js"></script>
